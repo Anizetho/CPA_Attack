@@ -3,7 +3,12 @@ clc ;
 tic;
 
 %% Load the data
-traces = csvread('traces.txt');
+Nth_measurement = 'Test_3000';
+path = '..\Data\Multiple_Keys_Measurements\Measurement_';
+totalPath = strcat(path, Nth_measurement,'\');
+traceFile = strcat(totalPath,'traces.txt');
+traces_brute = csvread(traceFile);
+traces=31.2500E-6*traces_brute;
 
 %% Plot 2D 4 traces
 figure

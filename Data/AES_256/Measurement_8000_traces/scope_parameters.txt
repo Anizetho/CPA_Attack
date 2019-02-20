@@ -1,0 +1,26 @@
+Trigger Level                       : 1.2400
+
+Trigger Mode                        : NORM
+
+Trigger CH                          : CH1
+
+Horiz Scale    (en V)               : 100.0000E-9
+
+Horiz Pos                           : 700.0000E-9
+
+Vert Scale CH1 (en V)               : 1.0000
+
+Vert Scale CH4 (en V)               : 200.0000E-3
+
+Vert Pos CH1   (décalage par ligne) : 0.0E+0
+
+Vert Pos CH4   (décalage par ligne) : 0.0E+0
+
+BW CH4                              : 200.0000E+6
+
+YMULT                               : 31.2500E-6
+
+YZERO                               : 0.0E+0
+
+YOFF                                : 0.0E+0
+

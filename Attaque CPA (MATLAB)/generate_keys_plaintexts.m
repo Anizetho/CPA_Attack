@@ -1,16 +1,20 @@
 clear
 clc
 
-Nth_measurement = 'Test_3000';
-path = '..\Data\Multiple_Keys_Measurements\Measurement_';
+%% The user defines the number of traces
+NUMBER_TRACES = 9000;
+
+%% To load the data
+Nth_measurement = strcat(int2str(NUMBER_TRACES),'_traces');
+path = '..\Data\AES_256\Measurement_';
 mkdir(strcat(path, Nth_measurement));
-file = fopen('..\Data\Multiple_Keys_Measurements\FileForName.txt','w');
+file = fopen('..\Data\AES_256\FileForName.txt','w');
 fprintf(file,'%s\n',Nth_measurement);
 fclose(file);
 
-%%
+%% Inputs
 n_keys          = 1;
-n_ppk           = 3000;
+n_ppk           = NUMBER_TRACES;
 n_plaintexts    = n_keys*n_ppk;
 
 size_key        = 32;
