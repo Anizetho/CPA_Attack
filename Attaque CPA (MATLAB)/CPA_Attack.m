@@ -9,7 +9,7 @@ tic;
 % - The user defines the AES's mode (128=16 ; 256=32)
 % - The user defines the number of traces that he would like test
 mode = 32;
-NUMBER_TRACES = 6000;
+NUMBER_TRACES = 500;
 
 %% Load the data
 Nth_measurement = strcat(int2str(NUMBER_TRACES),'_traces');
@@ -28,6 +28,9 @@ load(keyFile);
 clc
 pourcent = 5;
 fprintf(formatSpec,pourcent)
+
+%time = load('time.txt');
+%traces = load('traces.txt');
 
 %% Simulate the algorithm
 keys = [0:255];

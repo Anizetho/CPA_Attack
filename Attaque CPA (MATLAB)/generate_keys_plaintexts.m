@@ -2,7 +2,7 @@ clear
 clc
 
 %% The user defines the number of traces
-NUMBER_TRACES = 9000;
+NUMBER_TRACES = 4000;
 
 %% To load the data
 Nth_measurement = strcat(int2str(NUMBER_TRACES),'_traces');
